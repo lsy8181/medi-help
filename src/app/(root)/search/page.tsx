@@ -32,7 +32,7 @@ const SearchPage = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/search?pageNo=1&numOfRows=100`);
+      const response = await fetch(`/api/search?pageNo=1&numOfRows=20`);
       if (!response.ok) {
         throw new Error("네트워크 응답에 문제가 있습니다.");
       }

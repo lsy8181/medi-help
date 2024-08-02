@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
-  const numOfRows = searchParams.get("numOfRows") || "100";
+  const numOfRows = searchParams.get("numOfRows") || "10";
   const type = searchParams.get("type") || "json";
 
   try {
